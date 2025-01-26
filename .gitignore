@@ -1,0 +1,33 @@
+# Flutter/Dart specific
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+build/
+.dart_tool/
+.pub-cache/
+/ios/Pods/
+.DS_Store
+
+# Android
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# iOS
+/ios/.generated/
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
+/ios/Runner.xcworkspace/
+
+# macOS
+/macos/Flutter/ephemeral/
+/macos/Pods/
+/macos/.symlinks/
+/macos/Flutter/GeneratedPluginRegistrant.swift
+
+# IDE specific
+.idea/
+.vscode/
+*.iml
