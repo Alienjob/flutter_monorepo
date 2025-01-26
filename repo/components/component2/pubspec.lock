@@ -129,14 +129,14 @@ packages:
       path: "../module1"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   module2:
     dependency: "direct main"
     description:
       path: "../module2"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   path:
     dependency: transitive
     description:

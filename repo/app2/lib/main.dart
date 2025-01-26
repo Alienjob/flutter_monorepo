@@ -9,7 +9,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  static const String version = '1.0.0';
+  static const String version = '1.0.1';
 
   @override
   Widget build(BuildContext context) {

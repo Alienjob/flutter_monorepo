@@ -10,7 +10,7 @@ class Component1Widget extends StatelessWidget {
   const Component1Widget({super.key});
 
   /// The current version of Component1
-  static const String version = '0.0.1';
+  static const String version = '0.0.2';
 
   @override
   Widget build(BuildContext context) {

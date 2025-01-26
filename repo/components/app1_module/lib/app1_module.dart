@@ -10,7 +10,7 @@ class App1ModuleWidget extends StatelessWidget {
   const App1ModuleWidget({super.key});
 
   /// The current version of App1Module
-  static const String version = '0.0.1';
+  static const String version = '0.0.2';
 
   @override
   Widget build(BuildContext context) {

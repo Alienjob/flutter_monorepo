@@ -7,14 +7,14 @@ packages:
       path: "../components/app1_module"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   app2_module:
     dependency: "direct main"
     description:
       path: "../components/app2_module"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   async:
     dependency: transitive
     description:
@@ -61,14 +61,14 @@ packages:
       path: "../components/component1"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   component2:
     dependency: transitive
     description:
       path: "../components/component2"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -165,14 +165,14 @@ packages:
       path: "../components/module1"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   module2:
     dependency: transitive
     description:
       path: "../components/module2"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   path:
     dependency: transitive
     description:
