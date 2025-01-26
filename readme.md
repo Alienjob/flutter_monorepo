@@ -19,6 +19,28 @@ repo/
     └── module2/           # Shared module 2 (displays its version)
 ```
 
+## Current Version State
+
+Current version hierarchy demonstrates our versioning strategy:
+
+```
+Applications:
+- app1: 1.0.1
+- app2: 1.0.1
+
+App Modules:
+- app1_module: 0.0.2
+- app2_module: 0.0.2
+
+Components:
+- component1: 0.1.0 (Recently updated through feature branch)
+- component2: 0.0.2
+
+Base Modules:
+- module1: 0.0.2
+- module2: 0.0.2
+```
+
 ## Version Management
 
 Each component in the repository has its own version:
@@ -32,6 +54,7 @@ Each component in the repository has its own version:
    - Maintain their own version numbers
    - Display their version and versions of used modules
    - Can use different versions of modules
+   - Can be updated independently (as demonstrated with component1)
 
 3. **App-Specific Modules (app1_module, app2_module)**
    - Have independent versions
@@ -43,66 +66,69 @@ Each component in the repository has its own version:
    - Show versions of all used components and modules
    - Can use different versions of components and modules
 
-## Version Display System
+## Development Workflow
 
-Each Flutter widget in the system displays:
-- Its own version
-- Versions of its dependencies
-- Clear hierarchy of version dependencies
+Our workflow demonstrates effective version management:
 
-This allows for:
-- Easy tracking of component versions in use
-- Visual representation of dependency relationships
-- Quick identification of version mismatches
-- Understanding of version compatibility
+1. **Feature Development**
+   - Create feature branches for component updates (e.g., `component1feature1`)
+   - Update component versions independently
+   - Test changes in isolation
+   - Merge back to main when ready
 
-## Architecture Overview
+2. **Version Updates**
+   - Components can be versioned independently
+   - Version numbers reflect the nature of changes:
+     - 0.0.x for patches
+     - 0.x.0 for features
+     - x.0.0 for major changes
+   - All version changes are visible in the UI
 
-The repository follows a hierarchical dependency structure:
+3. **Integration**
+   - Components automatically display their versions
+   - Dependencies show their versions in a hierarchical structure
+   - Version conflicts are immediately visible in the UI
 
-1. **Applications (app1, app2)**
-   - Contain build configurations
-   - Can include functionality from their respective modules
-   - Depend on components and modules
-   - Display version tree of all dependencies
+## Best Practices Demonstrated
 
-2. **Business Logic Modules (app1_module, app2_module)**
-   - Contain core business logic for respective applications
-   - Located in the components directory for better reusability
-   - Display versions of used modules
-   - App1 can include parts of app2 functionality through module dependencies
+1. **Independent Versioning**
+   - Each component manages its own version
+   - Version updates don't force updates in dependent components
+   - Clear version display in UI for debugging
 
-3. **Components and Modules**
-   - Components depend on modules
-   - Both are shared resources that can be used across applications
-   - Each maintains its own version
-   - Promotes code reuse and maintainability
+2. **Feature Branching**
+   - Feature branches for component updates
+   - Clean merge history
+   - Isolated testing of changes
+
+3. **Version Visibility**
+   - All versions visible in runtime UI
+   - Clear dependency hierarchies
+   - Easy tracking of version combinations
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Alienjob/flutter_monorepo.git
+```
+
+2. Run either application:
+```bash
+cd repo/app1 # or app2
+flutter run -d macos
+```
+
+The apps will display the complete version hierarchy of all components and modules in use.
 
 ## Purpose
 
 This demo project illustrates:
 1. Clear separation between build configuration and business logic
 2. Modular architecture with well-defined dependencies
-3. Shared component and module management
-4. Best practices for organizing large codebases
-5. Version control and dependency management in a monorepo
-6. Visual representation of component versions and dependencies
+3. Effective version management in a monorepo
+4. Visual version tracking system
+5. Feature branch workflow
+6. Independent component versioning
 
-## Goals
-
-- Demonstrate clear separation between build configuration and business logic
-- Show how shared components and modules can be managed within a monorepo structure
-- Provide examples of dependency management in a hierarchical structure
-- Support flexible integration of functionality between applications
-- Enable efficient code sharing and reuse through the components directory
-- Visualize version dependencies and relationships
-
-## Development Workflow
-
-The repository structure supports a workflow where:
-- Applications (app1, app2) focus on build and deployment configuration
-- Business logic is developed in respective modules (app1_module, app2_module)
-- Shared functionality is developed in components and modules
-- Dependencies flow from apps → components → modules
-- Version changes are tracked and displayed in the UI
-- Different version combinations can be tested and deployed
+The repository structure supports a workflow where each component can evolve independently while maintaining clear version visibility and dependency tracking.
