@@ -132,3 +132,93 @@ This demo project illustrates:
 6. Independent component versioning
 
 The repository structure supports a workflow where each component can evolve independently while maintaining clear version visibility and dependency tracking.
+
+## Challenges and Limitations
+
+While this monorepo approach with visual version tracking provides many benefits, there are several challenges to consider:
+
+1. **Version Management Complexity**
+   - Manual version updates across multiple files (pubspec.yaml and main widget files)
+   - Risk of version mismatches if not all files are updated
+   - Need for careful coordination when updating interdependent components
+   - Complex dependency graphs can make updates risky
+
+2. **Local Development Dependencies**
+   - Using `path` dependencies in pubspec.yaml files works well for monorepo but complicates publishing to pub.dev
+   - Need to maintain separate dependency configurations for local development vs. production
+   - Potential issues when trying to use specific versions from pub.dev
+   - May require custom pub hosting solution for internal packages
+
+3. **Testing Challenges**
+   - Need to test multiple version combinations
+   - Complex integration testing scenarios
+   - Difficulty in maintaining test environments for different version combinations
+   - Risk of missing edge cases in version interactions
+
+4. **CI/CD Considerations**
+   - Need for sophisticated build pipelines to handle component interdependencies
+   - Complex versioning in automated deployment processes
+   - Challenge in determining which components need rebuilding when changes occur
+   - Increased build times with multiple package compilations
+
+5. **Scalability Issues**
+   - As the number of components grows, version management becomes more complex
+   - Increased build times when many components are interdependent
+   - Potential memory issues in IDE when working with many Flutter projects simultaneously
+   - Repository size growth can slow down cloning and operations
+
+6. **Source Control Challenges**
+   - Large repository size with multiple Flutter projects
+   - Complex merge scenarios when multiple components are updated
+   - Branch management complexity with feature branches across components
+   - Potential for conflicts in shared configuration files
+
+7. **Developer Experience**
+   - Longer initial setup time
+   - Learning curve for understanding version dependencies
+   - Need for clear documentation and conventions
+   - IDE performance impact with multiple Flutter projects
+   - Increased cognitive load in tracking version relationships
+
+## Mitigation Strategies
+
+1. **Automation Tools**
+   - Create scripts for version updates across files
+   - Implement automated version checking in CI/CD
+   - Use tools for dependency graph visualization
+   - Automated testing of version combinations
+
+2. **Development Practices**
+   - Strict versioning guidelines
+   - Regular dependency audits
+   - Clear documentation of version changes
+   - Feature flags for managing component variations
+   - Regular cleanup of unused versions
+
+3. **Infrastructure**
+   - Implement efficient caching in CI/CD
+   - Use build system optimizations
+   - Consider splitting very large monorepos if necessary
+   - Set up dedicated build servers for larger projects
+
+4. **Team Organization**
+   - Clear ownership of components
+   - Coordination protocols for version updates
+   - Regular sync meetings for version planning
+   - Training on monorepo workflows
+   - Designated maintainers for critical components
+
+Consider these challenges and limitations when deciding whether to adopt this approach for your project. The success of this approach depends on:
+- Team size and coordination capabilities
+- Project complexity and number of components
+- Available tooling and infrastructure
+- Clear processes and documentation
+- Regular maintenance and version management
+
+Alternative approaches might include:
+- Using separate repositories with traditional package management
+- Implementing a microservices architecture
+- Using a hybrid approach with selective component isolation
+- Implementing feature toggles instead of version management
+
+The key is to evaluate these trade-offs against your specific project needs and team capabilities.

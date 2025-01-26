@@ -99,13 +99,13 @@
     },
     {
       "name": "module1",
-      "rootUri": "../../module1",
+      "rootUri": "file:///Users/igorpashutin/.pub-cache/git/flutter_monorepo-4938f87640f958eb8b730fd0c241215bdb53e732/repo/components/module1",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
     {
       "name": "module2",
-      "rootUri": "../../module2",
+      "rootUri": "file:///Users/igorpashutin/.pub-cache/git/flutter_monorepo-4938f87640f958eb8b730fd0c241215bdb53e732/repo/components/module2",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
@@ -176,7 +176,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-01-26T20:16:39.739259Z",
+  "generated": "2025-01-26T20:50:39.912546Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///Users/igorpashutin/development/flutter",

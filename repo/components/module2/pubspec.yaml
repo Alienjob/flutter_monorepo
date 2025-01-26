@@ -1,7 +1,7 @@
 name: module2
 description: "A new Flutter package project."
 version: 0.0.2
-homepage:
+homepage: https://github.com/Alienjob/flutter_monorepo
 
 environment:
   sdk: ^3.5.4
@@ -16,8 +16,4 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^4.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
 flutter:

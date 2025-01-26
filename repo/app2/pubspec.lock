@@ -4,16 +4,20 @@ packages:
   app1_module:
     dependency: "direct main"
     description:
-      path: "../components/app1_module"
-      relative: true
-    source: path
+      path: "repo/components/app1_module"
+      ref: main
+      resolved-ref: "4938f87640f958eb8b730fd0c241215bdb53e732"
+      url: "https://github.com/Alienjob/flutter_monorepo.git"
+    source: git
     version: "0.0.2"
   app2_module:
     dependency: "direct main"
     description:
-      path: "../components/app2_module"
-      relative: true
-    source: path
+      path: "repo/components/app2_module"
+      ref: main
+      resolved-ref: "4938f87640f958eb8b730fd0c241215bdb53e732"
+      url: "https://github.com/Alienjob/flutter_monorepo.git"
+    source: git
     version: "0.0.2"
   async:
     dependency: transitive
@@ -58,16 +62,20 @@ packages:
   component1:
     dependency: transitive
     description:
-      path: "../components/component1"
-      relative: true
-    source: path
-    version: "0.0.2"
+      path: "repo/components/component1"
+      ref: main
+      resolved-ref: "4938f87640f958eb8b730fd0c241215bdb53e732"
+      url: "https://github.com/Alienjob/flutter_monorepo.git"
+    source: git
+    version: "0.1.0"
   component2:
     dependency: transitive
     description:
-      path: "../components/component2"
-      relative: true
-    source: path
+      path: "repo/components/component2"
+      ref: main
+      resolved-ref: "4938f87640f958eb8b730fd0c241215bdb53e732"
+      url: "https://github.com/Alienjob/flutter_monorepo.git"
+    source: git
     version: "0.0.2"
   cupertino_icons:
     dependency: "direct main"
@@ -162,16 +170,20 @@ packages:
   module1:
     dependency: transitive
     description:
-      path: "../components/module1"
-      relative: true
-    source: path
+      path: "repo/components/module1"
+      ref: main
+      resolved-ref: "4938f87640f958eb8b730fd0c241215bdb53e732"
+      url: "https://github.com/Alienjob/flutter_monorepo.git"
+    source: git
     version: "0.0.2"
   module2:
     dependency: transitive
     description:
-      path: "../components/module2"
-      relative: true
-    source: path
+      path: "repo/components/module2"
+      ref: main
+      resolved-ref: "4938f87640f958eb8b730fd0c241215bdb53e732"
+      url: "https://github.com/Alienjob/flutter_monorepo.git"
+    source: git
     version: "0.0.2"
   path:
     dependency: transitive

@@ -1,3 +1,11 @@
+module1
+3.5
+file:///Users/igorpashutin/.pub-cache/git/flutter_monorepo-4938f87640f958eb8b730fd0c241215bdb53e732/repo/components/module1/
+file:///Users/igorpashutin/.pub-cache/git/flutter_monorepo-4938f87640f958eb8b730fd0c241215bdb53e732/repo/components/module1/lib/
+module2
+3.5
+file:///Users/igorpashutin/.pub-cache/git/flutter_monorepo-4938f87640f958eb8b730fd0c241215bdb53e732/repo/components/module2/
+file:///Users/igorpashutin/.pub-cache/git/flutter_monorepo-4938f87640f958eb8b730fd0c241215bdb53e732/repo/components/module2/lib/
 async
 2.18
 file:///Users/igorpashutin/.pub-cache/hosted/pub.dev/async-2.11.0/
@@ -106,12 +114,4 @@ component2
 3.5
 file:///Users/igorpashutin/development/idt/versioning/repo/components/component2/
 file:///Users/igorpashutin/development/idt/versioning/repo/components/component2/lib/
-module1
-3.5
-file:///Users/igorpashutin/development/idt/versioning/repo/components/module1/
-file:///Users/igorpashutin/development/idt/versioning/repo/components/module1/lib/
-module2
-3.5
-file:///Users/igorpashutin/development/idt/versioning/repo/components/module2/
-file:///Users/igorpashutin/development/idt/versioning/repo/components/module2/lib/
 2

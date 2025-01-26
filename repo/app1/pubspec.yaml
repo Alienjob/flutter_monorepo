@@ -2,6 +2,7 @@ name: app1
 description: "A new Flutter project."
 publish_to: 'none'
 version: 1.0.1
+homepage: https://github.com/Alienjob/flutter_monorepo
 
 environment:
   sdk: ^3.5.4
@@ -10,9 +11,15 @@ dependencies:
   flutter:
     sdk: flutter
   app1_module:
-    path: ../components/app1_module
+    git:
+      url: https://github.com/Alienjob/flutter_monorepo.git
+      path: repo/components/app1_module
+      ref: main
   app2_module:
-    path: ../components/app2_module
+    git:
+      url: https://github.com/Alienjob/flutter_monorepo.git
+      path: repo/components/app2_module
+      ref: main
   cupertino_icons: ^1.0.6
 
 dev_dependencies:

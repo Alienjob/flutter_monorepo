@@ -126,16 +126,20 @@ packages:
   module1:
     dependency: "direct main"
     description:
-      path: "../module1"
-      relative: true
-    source: path
+      path: "repo/components/module1"
+      ref: main
+      resolved-ref: "4938f87640f958eb8b730fd0c241215bdb53e732"
+      url: "https://github.com/Alienjob/flutter_monorepo.git"
+    source: git
     version: "0.0.2"
   module2:
     dependency: "direct main"
     description:
-      path: "../module2"
-      relative: true
-    source: path
+      path: "repo/components/module2"
+      ref: main
+      resolved-ref: "4938f87640f958eb8b730fd0c241215bdb53e732"
+      url: "https://github.com/Alienjob/flutter_monorepo.git"
+    source: git
     version: "0.0.2"
   path:
     dependency: transitive
