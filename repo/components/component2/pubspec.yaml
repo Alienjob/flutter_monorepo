@@ -1,4 +1,4 @@
-name: app2_module
+name: component2
 description: "A new Flutter package project."
 version: 0.0.1
 homepage:
@@ -10,10 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  component1:
-    path: ../component1
-  component2:
-    path: ../component2
+  module1:
+    path: ../module1
+  module2:
+    path: ../module2
 
 dev_dependencies:
   flutter_test:

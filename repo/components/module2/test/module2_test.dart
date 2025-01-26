@@ -1,12 +1,18 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:module2/module2.dart';
 
 void main() {
-  test('adds one to input values', () {
-    final calculator = Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
+  testWidgets('Module2Widget shows version', (WidgetTester tester) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Scaffold(
+          body: Module2Widget(),
+        ),
+      ),
+    );
+
+    expect(find.text('Module 2'), findsOneWidget);
+    expect(find.text('Version: ${Module2Widget.version}'), findsOneWidget);
   });
 }

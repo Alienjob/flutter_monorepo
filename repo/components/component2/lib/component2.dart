@@ -1,21 +1,20 @@
-library app2_module;
+library component2;
 
 import 'package:flutter/material.dart';
-import 'package:component1/component1.dart';
-import 'package:component2/component2.dart';
+import 'package:module1/module1.dart';
+import 'package:module2/module2.dart';
 
-/// A widget that displays the app module name, version, and its component dependencies
-class App2ModuleWidget extends StatelessWidget {
-  /// Creates an App2ModuleWidget
-  const App2ModuleWidget({super.key});
+/// A widget that displays the component name, version, and its module dependencies
+class Component2Widget extends StatelessWidget {
+  /// Creates a Component2Widget
+  const Component2Widget({super.key});
 
-  /// The current version of App2Module
+  /// The current version of Component2
   static const String version = '0.0.1';
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.all(16.0),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -23,31 +22,31 @@ class App2ModuleWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'App 2 Module',
+              'Component 2',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
               'Version: $version',
               style: const TextStyle(
-                fontSize: 16,
+                fontSize: 14,
                 color: Colors.grey,
               ),
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: 16),
             const Text(
-              'Components:',
+              'Dependencies:',
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 16),
-            const Component1Widget(),
-            const SizedBox(height: 16),
-            const Component2Widget(),
+            const SizedBox(height: 8),
+            const Module1Widget(),
+            const SizedBox(height: 8),
+            const Module2Widget(),
           ],
         ),
       ),
