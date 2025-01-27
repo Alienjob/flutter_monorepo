@@ -63,7 +63,7 @@ packages:
     dependency: "direct overridden"
     description:
       path: "repo/components/component1"
-      ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
+      ref: "component1-v0.0.2"
       resolved-ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
       url: "https://github.com/Alienjob/flutter_monorepo.git"
     source: git
@@ -171,7 +171,7 @@ packages:
     dependency: "direct overridden"
     description:
       path: "repo/components/module1"
-      ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
+      ref: "module1-v0.0.2"
       resolved-ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
       url: "https://github.com/Alienjob/flutter_monorepo.git"
     source: git
@@ -180,7 +180,7 @@ packages:
     dependency: "direct overridden"
     description:
       path: "repo/components/module2"
-      ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
+      ref: "module2-v0.0.2"
       resolved-ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
       url: "https://github.com/Alienjob/flutter_monorepo.git"
     source: git
