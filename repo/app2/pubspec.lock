@@ -60,14 +60,14 @@ packages:
     source: hosted
     version: "1.18.0"
   component1:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "repo/components/component1"
-      ref: main
-      resolved-ref: "4938f87640f958eb8b730fd0c241215bdb53e732"
+      ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
+      resolved-ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
       url: "https://github.com/Alienjob/flutter_monorepo.git"
     source: git
-    version: "0.1.0"
+    version: "0.0.2"
   component2:
     dependency: transitive
     description:
@@ -168,20 +168,20 @@ packages:
     source: hosted
     version: "1.15.0"
   module1:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "repo/components/module1"
-      ref: main
-      resolved-ref: "4938f87640f958eb8b730fd0c241215bdb53e732"
+      ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
+      resolved-ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
       url: "https://github.com/Alienjob/flutter_monorepo.git"
     source: git
     version: "0.0.2"
   module2:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "repo/components/module2"
-      ref: main
-      resolved-ref: "4938f87640f958eb8b730fd0c241215bdb53e732"
+      ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
+      resolved-ref: "602cc75a24d85697cd3efb20f404b03787b423ba"
       url: "https://github.com/Alienjob/flutter_monorepo.git"
     source: git
     version: "0.0.2"
