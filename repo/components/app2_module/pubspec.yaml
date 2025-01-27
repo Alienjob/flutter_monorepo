@@ -1,7 +1,7 @@
 name: app2_module
 description: "A new Flutter package project."
 version: 0.0.2
-homepage:
+homepage: https://github.com/Alienjob/flutter_monorepo
 
 environment:
   sdk: ^3.5.4
@@ -11,9 +11,15 @@ dependencies:
   flutter:
     sdk: flutter
   component1:
-    path: ../component1
+    git:
+      url: https://github.com/Alienjob/flutter_monorepo.git
+      path: repo/components/component1
+      ref: v0.0.2
   component2:
-    path: ../component2
+    git:
+      url: https://github.com/Alienjob/flutter_monorepo.git
+      path: repo/components/component2
+      ref: main
 
 dev_dependencies:
   flutter_test:
